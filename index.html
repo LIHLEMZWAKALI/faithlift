@@ -157,7 +157,10 @@ God's Word for every student, every day.
 <button onclick="newVerse()">
 Show Another Verse
 </button>
-
+<button onclick="shareVerse()">
+Share To WhatsApp
+  
+</button>
 </div>
 
 <section class="features">
@@ -247,6 +250,22 @@ document.getElementById("reference").innerHTML =
 verses[random].ref;
 
 }
+ function shareVerse(){
+
+let verse =
+document.getElementById("verse").innerText;
+
+let ref =
+document.getElementById("reference").innerText;
+
+window.open(
+"https://wa.me/?text=" +
+encodeURIComponent(
+verse + " - " + ref
+)
+);
+
+} 
 
 newVerse();
 
