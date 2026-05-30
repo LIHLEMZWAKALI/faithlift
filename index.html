@@ -1,9 +1,256 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>FaithLift</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FaithLift | Ceres Sekondêr Bible Study</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI,sans-serif;
+background:#6b1028;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#6b1028,#8b1538);
+padding:30px;
+text-align:center;
+}
+
+.logo{
+width:140px;
+background:white;
+padding:10px;
+border-radius:15px;
+}
+
+h1{
+font-size:3rem;
+color:#FFD700;
+margin-top:15px;
+}
+
+.subtitle{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:2.5rem;
+color:#FFD700;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+}
+
+.verse-box{
+max-width:800px;
+margin:40px auto;
+background:white;
+color:#333;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.verse{
+font-size:1.5rem;
+line-height:1.7;
+}
+
+.reference{
+margin-top:20px;
+font-weight:bold;
+color:#6b1028;
+}
+
+button{
+background:#FFD700;
+color:#6b1028;
+border:none;
+padding:15px 25px;
+font-size:18px;
+font-weight:bold;
+border-radius:50px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+color:#333;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.card h3{
+color:#6b1028;
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#4e0c1d;
+margin-top:50px;
+}
+
+</style>
+
 </head>
+
 <body>
+
+<header>
+
+<img src="school logo.jpg" class="logo">
+
 <h1>FaithLift ✝️</h1>
-<h2>Ceres Sekondêr Bible Study</h2>
-<img
+
+<p class="subtitle">
+Ceres Sekondêr Bible Study Ministry
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2>One Scan. One Verse. One Encouragement.</h2>
+
+<p>
+God's Word for every student, every day.
+</p>
+
+</section>
+
+<div class="verse-box">
+
+<div class="verse" id="verse"></div>
+
+<div class="reference" id="reference"></div>
+
+<button onclick="newVerse()">
+Show Another Verse
+</button>
+
+</div>
+
+<section class="features">
+
+<div class="card">
+<h3>📖 Daily Encouragement</h3>
+<p>Receive a new Bible verse every visit.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Exam Motivation</h3>
+<p>Special verses to encourage students during exams.</p>
+</div>
+
+<div class="card">
+<h3>🙏 Faith & Prayer</h3>
+<p>Grow stronger in faith through God's Word.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>Matthew 5:16</h3>
+
+<p>
+"Let your light shine before others."
+</p>
+
+<br>
+
+<p>
+FaithLift • Ceres Sekondêr Bible Study
+</p>
+
+</footer>
+
+<script>
+
+const verses = [
+
+{
+text:"I can do all things through Christ who strengthens me.",
+ref:"Philippians 4:13"
+},
+
+{
+text:"Trust in the Lord with all your heart.",
+ref:"Proverbs 3:5"
+},
+
+{
+text:"Be strong and courageous. Do not be afraid.",
+ref:"Joshua 1:9"
+},
+
+{
+text:"For I know the plans I have for you.",
+ref:"Jeremiah 29:11"
+},
+
+{
+text:"God is our refuge and strength.",
+ref:"Psalm 46:1"
+},
+
+{
+text:"Those who hope in the Lord will renew their strength.",
+ref:"Isaiah 40:31"
+},
+
+{
+text:"With God all things are possible.",
+ref:"Matthew 19:26"
+}
+
+];
+
+function newVerse(){
+
+const random = Math.floor(Math.random()*verses.length);
+
+document.getElementById("verse").innerHTML =
+verses[random].text;
+
+document.getElementById("reference").innerHTML =
+verses[random].ref;
+
+}
+
+newVerse();
+
+</script>
+
+</body>
+</html>
