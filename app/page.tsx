@@ -13,7 +13,8 @@ export default function Home() {
           <div className={styles.navLinks}>
             <Link href="/investing">Long-Term Investing</Link>
             <Link href="/managed">Managed Trading</Link>
-            <Link href="#pricing">Pricing</Link>
+            <Link href="/clock">Global Clock</Link>
+            <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
@@ -133,7 +134,7 @@ export default function Home() {
               <ul>
                 <li><Link href="/investing">Long-Term Investing</Link></li>
                 <li><Link href="/managed">Managed Trading</Link></li>
-                <li><a href="#">About Us</a></li>
+                <li><Link href="/clock">Global Clock</Link></li>
               </ul>
             </div>
             <div className={styles.footerSection}>
