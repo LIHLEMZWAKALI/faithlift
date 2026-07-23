@@ -1,0 +1,326 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.backNav {
+  background: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.backNav a {
+  color: #1e40af;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.backNav a:hover {
+  color: #1e3a8a;
+}
+
+.hero {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.sectionAlt {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.sectionAlt h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.mainCard {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.benefitCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.benefitCard h3 {
+  color: #7c3aed;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.benefitCard p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.strategyContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.strategyBox {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #7c3aed;
+}
+
+.strategyBox h3 {
+  color: #7c3aed;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.strategyBox p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.statCard {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 36px;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-bottom: 10px;
+}
+
+.statCard p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.tiersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tierCard {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tierCard.featured {
+  border-color: #7c3aed;
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7c3aed;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tierCard h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.tierPrice {
+  color: #7c3aed;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.tierCard ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.tierCard li {
+  padding: 10px 0;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tierCard li:last-child {
+  border-bottom: none;
+}
+
+.button {
+  background: transparent;
+  color: #7c3aed;
+  border: 2px solid #7c3aed;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #7c3aed;
+  color: white;
+}
+
+.buttonPrimary {
+  background: #7c3aed;
+  color: white;
+  border: 2px solid #7c3aed;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background: #6d28d9;
+}
+
+.riskBox {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #ef4444;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.8;
+}
+
+.cta {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.buttonLarge {
+  background: #fbbf24;
+  color: #7c3aed;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.buttonLarge:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .section,
+  .sectionAlt {
+    padding: 40px 20px;
+  }
+
+  .section h2,
+  .sectionAlt h2 {
+    font-size: 28px;
+  }
+
+  .tierCard.featured {
+    transform: scale(1);
+  }
+
+  .mainCard {
+    padding: 20px;
+  }
+}

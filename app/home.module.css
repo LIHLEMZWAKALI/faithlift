@@ -1,0 +1,410 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLinks a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.heroContent p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonPrimary {
+  background: #fbbf24;
+  color: #1e40af;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.buttonSecondary {
+  background: transparent;
+  color: white;
+  padding: 14px 32px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buttonSecondary:hover {
+  background: white;
+  color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .heroContent h1 {
+    font-size: 32px;
+  }
+
+  .heroContent p {
+    font-size: 18px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+  }
+}
+
+/* Value Section */
+.valueSection {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.valueSection h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.valueCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.valueCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.valueCard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e40af;
+}
+
+.valueCard p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricingSection {
+  padding: 80px 20px;
+  background: white;
+}
+
+.pricingSection h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.pricingSubtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pricingCard.featured {
+  border-color: #1e40af;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e40af;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pricingCard h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+}
+
+.pricingCard > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.pricingCard ul {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.pricingCard li {
+  padding: 10px 0;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pricingCard li:last-child {
+  border-bottom: none;
+}
+
+.buttonOutline {
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.buttonOutline:hover {
+  background: #1e40af;
+  color: white;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.buttonLarge {
+  background: #fbbf24;
+  color: #1e40af;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buttonLarge:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 60px 20px 20px;
+  margin-top: auto;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+.footerSection h4 {
+  margin-bottom: 15px;
+  color: #fbbf24;
+}
+
+.footerSection p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.footerSection ul {
+  list-style: none;
+}
+
+.footerSection li {
+  margin-bottom: 10px;
+}
+
+.footerSection a {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.footerSection a:hover {
+  color: #fbbf24;
+}
+
+.footerBottom {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .valueSection,
+  .pricingSection,
+  .ctaSection {
+    padding: 40px 20px;
+  }
+
+  .pricingCard.featured {
+    transform: scale(1);
+  }
+
+  .valueSection h2,
+  .pricingSection h2,
+  .ctaSection h2 {
+    font-size: 28px;
+  }
+}
